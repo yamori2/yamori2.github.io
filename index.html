@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>求人募集</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>求人募集</h1>
+    </header>
+    
+    <main>
+        <section id="job-list">
+            <h2>募集職種</h2>
+            <div class="job">
+                <h3>システムエンジニア</h3>
+                <p>仕事内容: ソフトウェア開発、システム設計など</p>
+                <p>勤務地: 東京</p>
+                <p>給与: 年収400万〜700万</p>
+                <button class="apply-btn">応募する</button>
+            </div>
+            <div class="job">
+                <h3>デザイナー</h3>
+                <p>仕事内容: Webデザイン、UI/UXデザイン</p>
+                <p>勤務地: 大阪</p>
+                <p>給与: 年収300万〜600万</p>
+                <button class="apply-btn">応募する</button>
+            </div>
+            <div class="job">
+                <h3>マーケティング担当</h3>
+                <p>仕事内容: マーケティング戦略の立案、実行</p>
+                <p>勤務地: リモート可</p>
+                <p>給与: 年収350万〜650万</p>
+                <button class="apply-btn">応募する</button>
+            </div>
+        </section>
+        
+        <section id="application-form" style="display:none;">
+            <h2>応募フォーム</h2>
+            <form id="form">
+                <label for="name">名前:</label>
+                <input type="text" id="name" required>
+                
+                <label for="email">メールアドレス:</label>
+                <input type="email" id="email" required>
+                
+                <label for="job">希望職種:</label>
+                <input type="text" id="job" required>
+                
+                <label for="message">メッセージ:</label>
+                <textarea id="message" required></textarea>
+                
+                <button type="submit">送信</button>
+                <button type="button" id="cancel-btn">キャンセル</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2024 求人募集サイト</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
